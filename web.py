@@ -4,28 +4,21 @@ from flask import Flask, url_for, render_template, request
 
 app = Flask(__name__)
 
-@app.route("/")
-def_
+@app.route('/')
+def render_main():
+    return render_template('home.html')
+
+@app.route('/randomizer')
+def render_randomizer():
+    return render_template('randomizer.html')
+
+
+
 
 
 if __name__=="__main__":
     app.run(host='0.0.0.0')
 
-
-
-def review():
-
-    answer = input(" Will you be going to the restaurant generated for you?:  ")
-
-    if answer == "yes":
-        review = input("Please write a quick review about your experience: ")
-        return("Thank you for your feedback.")
-
-    if answer == "no":
-        return("No worries, thank you!")
-
-
-print(review())
 
 
    

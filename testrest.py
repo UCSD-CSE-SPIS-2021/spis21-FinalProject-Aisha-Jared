@@ -30,13 +30,17 @@ def random_rest(dietary_filter, category):
         
         # asian
         if category == 'asian':
-            asian_list = ["Blue Pepper Asian Cuisine", "Lemongrass Fresh Farm Plates"]
+            asian_list = ["Blue Pepper Asian Cuisine", "Lemongrass Fresh Farm Plates", "Pines"]
             asian = asian_list
             return random.choice(asian_list)
         
         # mexican
         if category == 'mexican':
-            mexican_list = []
+            mexican_list = ["Rubio's", "Su Pan Bakery", "Taco Villa"]
+            mexican = mexican_list
+            return random.choice(mexican_list)
+
+        # 
     
 # python testrest.py
 print(random_rest('none', 'asian'))
