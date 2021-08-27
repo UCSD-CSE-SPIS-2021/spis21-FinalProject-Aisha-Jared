@@ -14,11 +14,24 @@ def render_random_rest():
 
 @app.route{'/randomizer-result'}
 def render_random_rest_result()
-    # code
+    try:
+        # code
 
 @app.route('/review')
 def render_review():
     return render_template('review.html')
+
+@app.route('/review-result')
+def render_review_result():
+    try:
+        r_result = request.args['answer']
+        answer_result = review(answer)
+        return render_template('review_result.html')
+    except ValueError:
+        return "Sorry: something went wrong."
+            
+
+
 
 
 

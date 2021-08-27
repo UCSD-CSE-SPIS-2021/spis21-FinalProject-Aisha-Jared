@@ -3,11 +3,11 @@ import random
 
 def random_rest(dietary_filter, category):
 
-    # str(dietary_filter).lower()
-    # str(category).lower()
+    # str(dietary_filter)
+    # str(category)
 
-    # dietary_filter.lower()
-    # category.lower()
+    # dietary_filter.casefold()
+    # category.casefold()
 
     # vegan
     if dietary_filter == 'vegan':
