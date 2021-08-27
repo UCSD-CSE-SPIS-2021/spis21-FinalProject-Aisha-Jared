@@ -9,8 +9,22 @@ def render_main():
     return render_template('home.html')
 
 @app.route('/randomizer')
-def render_randomizer():
+def render_random_rest():
     return render_template('randomizer.html')
+
+@app.route{'/randomizer-result'}
+def render_random_rest_result()
+    # code
+
+@app.route('/review')
+def render_review():
+    return render_template('review.html')
+
+
+
+
+
+
 
 
 

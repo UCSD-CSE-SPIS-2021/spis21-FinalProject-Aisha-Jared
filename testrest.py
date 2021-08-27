@@ -1,9 +1,13 @@
 
-# filters: vegan, vegetarian, cafe
-
 import random
 
 def random_rest(dietary_filter, category):
+
+    # str(dietary_filter).lower()
+    # str(category).lower()
+
+    # dietary_filter.lower()
+    # category.lower()
 
     # vegan
     if dietary_filter == 'vegan':
@@ -22,11 +26,11 @@ def random_rest(dietary_filter, category):
     # no dietary restrictions
     if dietary_filter == 'none':
         
-        # cafe
-        if category == 'cafe':
-            cafe_list = ["Cafe Ventanas", "Caroline's Seaside Cafe", "Splash! Cafe"]
-            cafe = cafe_list
-            return random.choice(cafe_list)
+        # coffee
+        if category == 'coffee':
+            coffee_list = ["Cafe Ole'", "Cups Coffee", "Fairbanks Coffee", "Java Coast Coffee Cart", "Muir Woods Coffee House", "Splash Cafe at Birch Aquarium", "Starbucks", "TEC Cafe", "The Art of Espresso", "Audrey's Cafe", "Canyon Vista Marketplace", "OceanView", "Pacific Cafe", "Pepper Canyon Market", "Sixth Market", "Volkan Coffee"]
+            coffee = coffee_list
+            return random.choice(coffee_list)
         
         # asian
         if category == 'asian':
@@ -40,7 +44,6 @@ def random_rest(dietary_filter, category):
             mexican = mexican_list
             return random.choice(mexican_list)
 
-        # 
-    
+
 # python testrest.py
-print(random_rest('none', 'asian'))
+print(random_rest('none', 'coffee'))
