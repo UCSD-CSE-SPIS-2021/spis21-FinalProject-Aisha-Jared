@@ -86,5 +86,7 @@ def random_rest(dietary_filter, category):
             dessert = dessert_list
             return random.choice(dessert_list)
 
+
+
 # python testrest.py
-print(random_rest('none', 'middleeastern'))
+print(random_rest('none', 'greek'))

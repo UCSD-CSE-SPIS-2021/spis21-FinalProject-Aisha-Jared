@@ -1,3 +1,19 @@
 
 {% extends "layout.html" %}
 
+{% block title %}Restaurant Randomizer{% endblock %}
+
+{% block content %}
+
+<p>Enter a dietary filter (if none put 'none') and a category</p>
+
+<form action="/randomizer-result">
+  Dietary Filter:<br>
+  <input type="text" name="filter" value="none">
+  <input type="submit" value="Submit">
+  Category:<br>
+  <input type="text" name="category" value="american">
+  <input type="submit" value="Submit">
+</form>
+
+{% endblock %}
