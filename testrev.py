@@ -12,3 +12,5 @@ def review():
 
 # python testrev.py
 print(review())
+
+#create a link on the home page that will allow user to submit review without having to ask whether they'll go or not 
