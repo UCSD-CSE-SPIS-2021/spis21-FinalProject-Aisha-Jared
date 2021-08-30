@@ -3,12 +3,6 @@ import random
 
 def random_rest(dietary_filter, category):
 
-    # str(dietary_filter)
-    # str(category)
-
-    # dietary_filter.casefold()
-    # category.casefold()
-
     # vegan
     if dietary_filter == 'vegan':
         if category == 'none':

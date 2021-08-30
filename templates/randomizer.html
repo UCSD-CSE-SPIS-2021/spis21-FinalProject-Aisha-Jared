@@ -8,12 +8,27 @@
 <p>Enter a dietary filter (if none put 'none') and a category</p>
 
 <form action="/randomizer-result">
-  Dietary Filter:<br>
-  <input type="text" name="filter" value="none">
-  <!input type="submit" value="Submit">
-  Category:<br>
-  <input type="text" name="category" value="american">
-  <input type="submit" value="Submit">
+  <label for="filter">Dietary Filter:</label>
+  <select name="filter" id="filter">
+    <option value='none'>None</option>
+    <option value='vegan'>Vegan</option>
+    <option value='vegetarian'>Vegetarian</option>
+  </select>
+  <br>
+  <label for="category">Category:</label>
+  <select name="category" id="category">
+    <option value='fast'>Fast</option>
+    <option value='coffee'>Coffee</option>
+    <option value='asian'>Asian</option>
+    <option value='mexican'>Mexican</option>
+    <option value='italian'>Italian</option>
+    <option value='american'>American</option>
+    <option value='greek'>Greek</option>
+    <option value='middleeastern'>Middle Eastern</option>
+    <option value='mongolian'>Mongolian</option>
+    <option value='dessert'>Dessert</option>
+    <input type="submit" value="Submit">
+
 </form>
 
 {% endblock %}

@@ -22,6 +22,7 @@ def render_random_rest_result():
         filter_result = request.args['filter']
         category_result = request.args['category']
         restaurant_result = random_rest(filter_result, category_result)
+        return render_template('randomizer_result.html', restaurant = restaurant_result)
     except ValueError:
         return "Sorry, something went wrong :("
 
@@ -40,12 +41,6 @@ def render_review_result():
             
 
 def random_rest(dietary_filter, category):
-
-    # str(dietary_filter)
-    # str(category)
-
-    # dietary_filter.casefold()
-    # category.casefold()
 
     # vegan
     if dietary_filter == 'vegan':
