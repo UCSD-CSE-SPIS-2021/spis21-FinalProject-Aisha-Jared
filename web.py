@@ -119,6 +119,13 @@ def random_rest(dietary_filter, category):
             dessert = dessert_list
             return random.choice(dessert_list)
 
+    # no dietary filters or category filters
+    if dietary_filter == 'none':
+        if category == 'none':
+            none_list = ["64 Degrees", "Art of Espresso Cafe", "Audrey's Cafe", "Bella Vista", "Blue Bowl", "Blue Pepper Asian Cuisine", "Burger King", "Cafe Ole", "Cafe Ventanas", "Caroline's Seaside Cafe", "Club Med", "Copa Vida Cafe", "Crave", "Croutons", "Cups", "Cups Outdoor Cafe", "Dirty Birds", "Earl's", "Fan-Fan", "Foodworx", "Fresh", "Fusion Grill", "Jamba Juice", "Lemongrass Farm Fresh Plates", "Makai", "Muir Woods", "Noodles", "OceanView", "Pacific Cafe", "Panda Express", "Pines", "Plant Power", "Roger's Market", "Rooftop", "Roots", "Rubio's", "Santorini Greek Island Grill", "Seed + Sprout", "Shogun of La Jolla / Fusion Noodle Cafe", "Showa Ramen", "Sixth-Four North", "Soda & Swine", "Splash! Cafe", "Starbucks", "Su Pan Bakery", "Subway", "Taco Villa", "Tahini", "Tapioca Express", "TEC Cafe", "The Bistro", "The Food Co-op", "Three-Sixty", "Volkan Coffee", "Wolftown", "YogurtWorld", "Zanzibar"]
+            none = none_list
+            return random.choice(none_list)
+
 
 def review():
 
