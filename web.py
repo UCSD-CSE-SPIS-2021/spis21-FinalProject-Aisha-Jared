@@ -26,6 +26,7 @@ def render_random_rest_result():
     except ValueError:
         return "Sorry, something went wrong :("
 
+"""
 @app.route('/review')
 def render_review():
     return render_template('review.html')
@@ -38,7 +39,7 @@ def render_review_result():
         return render_template('review_result.html')
     except ValueError:
         return "Sorry: something went wrong."
-            
+"""    
 
 def random_rest(dietary_filter, category):
 
@@ -125,18 +126,6 @@ def random_rest(dietary_filter, category):
             none_list = ["64 Degrees", "Art of Espresso Cafe", "Audrey's Cafe", "Bella Vista", "Blue Bowl", "Blue Pepper Asian Cuisine", "Burger King", "Cafe Ole", "Cafe Ventanas", "Caroline's Seaside Cafe", "Club Med", "Copa Vida Cafe", "Crave", "Croutons", "Cups", "Cups Outdoor Cafe", "Dirty Birds", "Earl's", "Fan-Fan", "Foodworx", "Fresh", "Fusion Grill", "Jamba Juice", "Lemongrass Farm Fresh Plates", "Makai", "Muir Woods", "Noodles", "OceanView", "Pacific Cafe", "Panda Express", "Pines", "Plant Power", "Roger's Market", "Rooftop", "Roots", "Rubio's", "Santorini Greek Island Grill", "Seed + Sprout", "Shogun of La Jolla / Fusion Noodle Cafe", "Showa Ramen", "Sixth-Four North", "Soda & Swine", "Splash! Cafe", "Starbucks", "Su Pan Bakery", "Subway", "Taco Villa", "Tahini", "Tapioca Express", "TEC Cafe", "The Bistro", "The Food Co-op", "Three-Sixty", "Volkan Coffee", "Wolftown", "YogurtWorld", "Zanzibar"]
             none = none_list
             return random.choice(none_list)
-
-
-def review():
-
-    answer = input(" Will you be going to the restaurant generated for you?:  ").casefold()
-
-    if answer == "yes":
-        review = input("Please write a quick review about your experience: ") 
-        return("Thank you for your feedback.")
-
-    if answer == "no":
-        return("No worries, thank you!")
 
 
 

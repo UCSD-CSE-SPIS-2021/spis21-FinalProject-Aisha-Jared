@@ -1,4 +1,5 @@
 body {
-    background-color: #eef;
+    background-image: url(testbg.png);
+    background-color: white;
     color: black;
 }
