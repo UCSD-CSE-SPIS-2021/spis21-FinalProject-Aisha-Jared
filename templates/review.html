@@ -1,19 +1,17 @@
 
 {% extends "layout.html" %}
 
-<!Doctype html>
-<html>
-<body>
+{% block title %}Review{% endblock %}
 
-<h1>Will you be going to the restaurant generated for you?</h1>
+{% block content %}
 
-<h2> If yes please write some feedback and then press submit.</h2>
+<h1>Please write a quick review and then press "Submit".</h1>
 
-<form action = "/review">
+
+<form action = "/review-result">
 Review: <br>
 <input type="text" name="review">
-  <input type="submit" value="Submit">
+  <input type="submit" value="Submit" button type="button" onclick="alert('Thank you for your feedback!')"></button>
 </form>
 
-<body>
-<html>
+{% endblock %}

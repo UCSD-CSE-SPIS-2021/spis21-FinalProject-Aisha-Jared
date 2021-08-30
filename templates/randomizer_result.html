@@ -4,5 +4,17 @@
 {% block title %}Restaurant{% endblock %}
 
 {% block content %}
-<p> {{ restaurant }} </p>
+<p1> {{ restaurant }} </p1>
+
+<br>
+<br>
+
+<p2>Consider reviewing the restaurant</p2>
+<form action = "/review-result">
+Review: <br>
+<input type="text" name="review">
+  <input type="submit" value="Submit" button type="button" onclick="alert('Thank you for your feedback!')"></button>
+</form>
+
+
 {% endblock %}

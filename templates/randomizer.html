@@ -5,7 +5,7 @@
 
 {% block content %}
 
-<p>Enter a dietary filter (if none put 'none') and a category</p>
+<p>Enter a dietary filter and a category (one option should be selected as "none")</p>
 
 <form action="/randomizer-result">
   <label for="filter">Dietary Filter:</label>
@@ -17,6 +17,7 @@
   <br>
   <label for="category">Category:</label>
   <select name="category" id="category">
+    <option value='none'>None</option>
     <option value='fast'>Fast</option>
     <option value='coffee'>Coffee</option>
     <option value='asian'>Asian</option>
@@ -28,7 +29,6 @@
     <option value='mongolian'>Mongolian</option>
     <option value='dessert'>Dessert</option>
     <input type="submit" value="Submit">
-
 </form>
 
 {% endblock %}
