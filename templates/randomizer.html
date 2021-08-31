@@ -1,9 +1,7 @@
 
-{% extends "layout.html" %}
-
-{% block title %}Restaurant Randomizer{% endblock %}
-
-{% block content %}
+<!DOCTYPE html>
+<html>
+<head>
 
 <p1>Select a dietary filter and a category</p1>
 
@@ -14,7 +12,9 @@
 
 <br>
 <br>
+</head>
 
+<body>
 <form action="/randomizer-result">
   <label for="filter">Dietary Filter:</label>
   <select name="filter" id="filter">
@@ -38,5 +38,6 @@
     <option value='dessert'>Dessert</option>
     <input type="submit" value="Submit">
 </form>
+</body>
 
-{% endblock %}
+</html>

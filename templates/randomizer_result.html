@@ -1,14 +1,15 @@
 
-{% extends "layout.html" %}
+<!DOCTYPE html>
+<html>
+<head>
 
-{% block title %}Restaurant{% endblock %}
-
-{% block content %}
 <p1> {{ restaurant }} </p1>
+</head>
 
 <br>
 <br>
 
+<body>
 <p2>Consider reviewing the restaurant</p2>
 <form action = "/review-result">
 
@@ -18,6 +19,6 @@ Review: <br>
   <input type="text" name="review">
   <input type="submit" value="Submit" button type="button" onclick="alert('Thank you for your feedback!')"></button>
 </form>
+</body>
 
-
-{% endblock %}
+</html>
