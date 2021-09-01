@@ -2,41 +2,78 @@
 <!DOCTYPE html>
 <html>
 <head>
+<style>
+body {
+  background-image: url('https://miro.medium.com/max/960/1*h4A-rMJQhdaw7-Xb-8UllA.jpeg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.headingcenter {
+  margin: 0;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.paragraphcenter {
+  margin: 0;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.optioncenter {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+</style>
 
-<p1>Select a dietary filter and a category</p1>
+<div class="headingcenter">
+  <h1>Select a dietary filter and a category</h1>
+</div>
 
-<br>
-<br>
-
-<p2>If dietary filter selected, keep category as "none"</p2>
+<div class="paragraphcenter">
+  <p1>If dietary filter selected, keep category as "none"</p1>
+</div>
 
 <br>
 <br>
 </head>
 
 <body>
-<form action="/randomizer-result">
-  <label for="filter">Dietary Filter:</label>
-  <select name="filter" id="filter">
-    <option value='none'>None</option>
-    <option value='vegan'>Vegan</option>
-    <option value='vegetarian'>Vegetarian</option>
-  </select>
-  <br>
-  <label for="category">Category:</label>
-  <select name="category" id="category">
-    <option value='none'>None</option>
-    <option value='fast'>Fast</option>
-    <option value='coffee'>Coffee</option>
-    <option value='asian'>Asian</option>
-    <option value='mexican'>Mexican</option>
-    <option value='italian'>Italian</option>
-    <option value='american'>American</option>
-    <option value='greek'>Greek</option>
-    <option value='middleeastern'>Middle Eastern</option>
-    <option value='mongolian'>Mongolian</option>
-    <option value='dessert'>Dessert</option>
-    <input type="submit" value="Submit">
+
+<div class="optioncenter">
+  <form action="/randomizer-result">
+    <label for="filter">Dietary Filter:</label>
+    <select name="filter" id="filter">
+      <option value='none'>None</option>
+      <option value='vegan'>Vegan</option>
+      <option value='vegetarian'>Vegetarian</option>
+    </select>
+    <br>
+    <label for="category">Category:</label>
+    <select name="category" id="category">
+      <option value='none'>None</option>
+      <option value='fast'>Fast</option>
+      <option value='coffee'>Coffee</option>
+      <option value='asian'>Asian</option>
+      <option value='mexican'>Mexican</option>
+      <option value='italian'>Italian</option>
+      <option value='american'>American</option>
+      <option value='greek'>Greek</option>
+      <option value='middleeastern'>Middle Eastern</option>
+      <option value='mongolian'>Mongolian</option>
+      <option value='dessert'>Dessert</option>
+      <input type="submit" value="Submit">
+</div>
+
 </form>
 </body>
 

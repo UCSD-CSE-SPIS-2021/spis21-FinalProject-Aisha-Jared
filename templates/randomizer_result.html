@@ -2,23 +2,78 @@
 <!DOCTYPE html>
 <html>
 <head>
+<style>
+body {
+  background-image: url('https://miro.medium.com/max/960/1*h4A-rMJQhdaw7-Xb-8UllA.jpeg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.headingcenter {
+  margin: 0;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.paragraphcenter {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.optioncenter {
+  margin: 0;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.paracenter {
+  margin: 0;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+</style>
 
-<p1> {{ restaurant }} </p1>
+<div class="headingcenter">
+    <h1>Restaurant:</h1>
+</div>
+
+<div class="paracenter">   
+    <p1> {{ restaurant }} </p1>
+</div>
+
 </head>
 
 <br>
 <br>
 
 <body>
-<p2>Consider reviewing the restaurant</p2>
-<form action = "/review-result">
+
+<div class="paragraphcenter">
+    <p2>Consider reviewing the restaurant</p2>
+    <form action = "/review-result">
+</div>
 
 <br>
 
-Review: <br>
-  <input type="text" name="review">
-  <input type="submit" value="Submit" button type="button" onclick="alert('Thank you for your feedback!')"></button>
+<div class="optioncenter">
+    Review: <br>
+    <input type="text" name="review">
+    <input type="submit" value="Submit" button type="button" onclick="alert('Thank you for your feedback!')"></button>
+</div>
+
+
 </form>
+
 </body>
 
 </html>
