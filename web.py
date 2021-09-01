@@ -6,7 +6,7 @@ from flask import Flask, url_for, render_template, request
 
 import random
 
-app = Flask(__web__)
+app = Flask(__name__)
 
 @app.route('/')
 def render_main():
@@ -130,5 +130,5 @@ def random_rest(dietary_filter, category):
 
 
 if __name__=="__main__":
-    app.run(host='0.0.0.0')
+    app.run(host='PORT')
 
