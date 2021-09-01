@@ -6,7 +6,7 @@ from flask import Flask, url_for, render_template, request
 
 import random
 
-app = Flask(__name__)
+app = Flask(__web__)
 
 @app.route('/')
 def render_main():
