@@ -3,11 +3,18 @@
 <html>
 <head>
 <style>
+@keyframes backgroundAnimation{
+  0%{background-position: left center;}
+  50%{background-position: right center;}
+  100%{background-position: left center;}
+}
 body {
-  background-image: url('https://miro.medium.com/max/960/1*h4A-rMJQhdaw7-Xb-8UllA.jpeg');
+  background-image: url('https://images.squarespace-cdn.com/content/v1/54076437e4b0cd91b7e7da16/1519330714369-PWQGMPW5QQ4BUEV5UNAL/dining+hall+5.png?format=2500w');
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover;
+  background-size: fill;
+  animation: backgroundAnimation 15s ease infinite;
+  image-rendering: -webkit-optimize-contrast;
 }
 .headingcenter {
   margin: 0;

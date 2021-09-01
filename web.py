@@ -130,5 +130,5 @@ def random_rest(dietary_filter, category):
 
 
 if __name__=="__main__":
-    app.run(host='PORT')
+    app.run(host='0.0.0.0')
 
