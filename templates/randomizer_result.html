@@ -4,7 +4,7 @@
 <head>
 <style>
 body {
-  background-image: url('https://miro.medium.com/max/960/1*h4A-rMJQhdaw7-Xb-8UllA.jpeg');
+  background-image: url('https://www.squawalpine.com/-/media/widen/squaw-valley-alpine-meadows/stock-photography/winter/dining--aprs/1-nye-adobestock-278161313-jpeg.ashx');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -12,68 +12,83 @@ body {
 .headingcenter {
   margin: 0;
   position: absolute;
-  top: 30%;
-  left: 50%;
+  top: 40%;
+  left: 37%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-.paragraphcenter {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-.optioncenter {
-  margin: 0;
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-.paracenter {
+.otherheadingcenter {
   margin: 0;
   position: absolute;
   top: 40%;
-  left: 50%;
+  left: 62%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+}
+.reviewcenter {
+  margin: 0;
+  position: absolute;
+  top: 46%;
+  left: 62%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.restcenter {
+  margin: 0;
+  position: absolute;
+  top: 47%;
+  left: 37%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.headingfont {
+  font-family: "Times New Roman", Times, serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+}
+.paragraphfont {
+  font-family: "Times New Roman", Times, serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+}
+.whitefont {
+  color: white;
 }
 </style>
 
 <div class="headingcenter">
-    <h1>Restaurant:</h1>
+  <div class="headingfont">
+    <div class="whitefont">
+      <h1>Restaurant:</h1>
+    </div>
+  </div>
 </div>
 
-<div class="paracenter">   
-    <p1> {{ restaurant }} </p1>
+<div class="restcenter">
+  <div class="paragraphfont">
+    <p1><mark> {{ restaurant }} </mark></p1>
+  </div>
 </div>
 
 </head>
 
-<br>
-<br>
-
 <body>
 
-<div class="paragraphcenter">
-    <p2>Consider reviewing the restaurant</p2>
+<div class="otherheadingcenter">
+  <div class="whitefont">
+    <h2>Consider reviewing the restaurant</h2>
     <form action = "/review-result">
+  </div>
 </div>
 
-<br>
-
-<div class="optioncenter">
-    Review: <br>
-    <input type="text" name="review">
-    <input type="submit" value="Submit" button type="button" onclick="alert('Thank you for your feedback!')"></button>
+<div class="reviewcenter">
+  Review: <br>
+  <input type="text" name="review">
+  <input type="submit" value="Submit" button type="button" onclick="alert('Thank you for your feedback!')"></button>
 </div>
-
-
 </form>
 
 </body>
-
 </html>
